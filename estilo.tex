@@ -1,0 +1,195 @@
+\documentclass[]{article}
+
+%%%%%%%%%%%%%%%%%%%
+% Packages/Macros %
+%%%%%%%%%%%%%%%%%%%
+\usepackage{amssymb,latexsym,amsmath} % Standard packages
+\usepackage{bbm}      
+\usepackage[brazil]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage{ marvosym }
+
+%  Para usar o tikz %
+\usepackage{pgf,tikz,pgfplots}
+\pgfplotsset{compat=1.15}
+\usepackage{mathrsfs}
+\usetikzlibrary{arrows}
+
+%formatação customizada
+\usepackage{indentfirst}   %indenta o primeiro paragrafo
+\linespread{1.3}
+
+
+%%%%%%%%%%%
+% Margins %
+%%%%%%%%%%%
+\addtolength{\textwidth}{1.0in}
+\addtolength{\textheight}{1.00in}
+\addtolength{\evensidemargin}{-0.75in}
+\addtolength{\oddsidemargin}{-0.75in}
+\addtolength{\topmargin}{-.50in}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Theorem/Proof Environments %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newtheorem{theorem}{Teorema}
+\newenvironment{proof}{\noindent{\bf Proof:}}{$\hfill \Box$ \vspace{10pt}} 
+\newtheorem{proposicao}[theorem]{{\bf Proposição}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%
+%       Macros        %
+%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\defi}{\textbf}                  %definir coisas em texto
+\newcommand{\defmm}{\overset{\text{def}}{=}} %definir coisas em math mode
+
+%       Matrizes e vetores
+\newcommand{\transposta}{^\top}   %simbolo para transposta de alguma matriz
+\newcommand{\um}{\mathbbm{1}}     %precisa do pacote bbm
+
+
+%%%%%%%%%%%%
+% Document %
+%%%%%%%%%%%%
+\begin{document}
+\begin{titlepage}
+	\begin{center}{\scshape
+		Universidade de São Paulo \\
+		Instituto de Matemática e Estatística}\\
+		\vspace{5cm}
+		{\huge
+			Estilo não é mara
+		}\\
+		\vspace{.5cm}
+		{\large Arthur Henrique Dias Rodrigues}\footnote{NºUSP: 9793951}\\
+		{\footnotesize sob a orientação de}\\
+		{\large José Coelho de Pina}
+	\end{center}
+	\vspace{3cm}
+	\vfill
+	\begin{center}
+		Relatório \\
+		MAT0148 - Introdução ao Trabalho Científico
+	\end{center}
+
+\end{titlepage}
+\newpage
+
+
+\title{Estilo não é mara}
+\author{Arthur H. D. Rodrigues}
+\maketitle
+\tableofcontents
+\newpage
+\begin{abstract}
+This document represents the output from the file ``sample.tex" once compiled using your favorite \LaTeX compiler.  This file should serve as a good example of the basic structure of a ``.tex" file as well as many of the most basic commands needed for typesetting documents involving mathematical symbols and expressions.  For more of a description on how each command works, please consult the links found on our course webpage.
+
+\end{abstract}
+
+
+\section{Imagens}
+Colocar figuras no ambiente figure com caption e labelar com fig:blabla.
+Não esquecer de ponto final no caption
+
+\begin{figure}[htb]
+\begin{center}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-0.47614898458867905,2.3824287310797314) rectangle (7.414798428208247,5.961490285640179);
+\draw [line width=2pt] (2.3890299553441805,2.613109798564165)-- (3.3913800563064553,2.5941975325082733);
+\draw [line width=2pt] (3.3913800563064553,2.5941975325082733)-- (4.213414673373465,3.168063794846413);
+\draw [line width=2pt] (4.213414673373465,3.168063794846413)-- (4.541144522754616,4.115511178362278);
+\draw [line width=2pt] (4.541144522754616,4.115511178362278)-- (4.2493879411141915,5.074646985104966);
+\draw [line width=2pt] (4.2493879411141915,5.074646985104966)-- (3.449586026197352,5.67911393672582);
+\draw [line width=2pt] (3.449586026197352,5.67911393672582)-- (2.447235925235077,5.698026202781712);
+\draw [line width=2pt] (2.447235925235077,5.698026202781712)-- (1.6252013081680676,5.1241599404435725);
+\draw [line width=2pt] (1.6252013081680676,5.1241599404435725)-- (1.2974714587869167,4.176712556927707);
+\draw [line width=2pt] (1.2974714587869167,4.176712556927707)-- (1.58922804042734,3.217576750185019);
+\draw [line width=2pt] (1.58922804042734,3.217576750185019)-- (2.3890299553441805,2.613109798564165);
+\draw [line width=2pt] (2.447235925235077,5.698026202781712)-- (1.58922804042734,3.217576750185019);
+\draw [line width=2pt] (2.3890299553441805,2.613109798564165)-- (4.541144522754616,4.115511178362278);
+\draw [line width=2pt] (1.6252013081680676,5.1241599404435725)-- (4.2493879411141915,5.074646985104966);
+\draw [line width=2pt] (3.449586026197352,5.67911393672582)-- (4.213414673373465,3.168063794846413);
+\draw [line width=2pt] (3.3913800563064553,2.5941975325082733)-- (1.2974714587869167,4.176712556927707);
+
+\begin{scriptsize}
+\draw [fill=black] (2.3890299553441805,2.613109798564165) circle (2.5pt);
+\draw [fill=black] (3.3913800563064553,2.5941975325082733) circle (2.5pt);
+\draw [fill=black] (4.213414673373465,3.168063794846413) circle (2.5pt);
+\draw [fill=black] (4.541144522754616,4.115511178362278) circle (2.5pt);
+\draw [fill=black] (4.2493879411141915,5.074646985104966) circle (2.5pt);
+\draw [fill=black] (3.449586026197352,5.67911393672582) circle (2.5pt);
+\draw [fill=black] (2.447235925235077,5.698026202781712) circle (2.5pt);
+\draw [fill=black] (1.6252013081680676,5.1241599404435725) circle (2.5pt);
+\draw [fill=black] (1.2974714587869167,4.176712556927707) circle (2.5pt);
+\draw [fill=black] (1.58922804042734,3.217576750185019) circle (2.5pt);
+\end{scriptsize}
+\end{tikzpicture}
+\end{center}
+\caption{Um grafo bem simétrico.}
+\label{fig:grafo}
+\end{figure}
+
+Figuras de Tikz usam [line width=1pt] e circle (1.7pt)
+
+
+\section{math mode}
+
+\subsection{Denifições, provas e teoremas}
+
+Defino a \defi{matriz laplaciana} por escrito desta forma e em math mode dessa forma:
+$ L \defmm D-A$
+
+Um teorema podem ter nome, como por exemplo.
+
+\begin{theorem}[Binomial Theorem]
+For any nonnegative integer $n$, we have
+$$(1+x)^n = \sum_{i=0}^n {n \choose i} x^i$$
+\end{theorem}
+
+Proposições usam o mesmo contador.
+\begin{proposicao}
+Estética é uma merda
+\end{proposicao}
+
+\begin{proof}
+\begin{eqnarray*}
+(A\cup B)-(C-A) &=& (A\cup B) \cap (C-A)^c\\
+&=& (A\cup B) \cap (C \cap A^c)^c \\
+&=& (A\cup B) \cap (C^c \cup A) \\
+&=& A \cup (B\cap C^c) \\
+&=& A \cup (B-C)
+\end{eqnarray*}
+\end{proof}
+
+Com o ambiente align posso enumerar equações e, em seguida, as referenciar.
+
+%\begin{align}
+%  A(Qe_i) & = QDQ\transposta(Qe_i) \label{eq:l0}\\
+%          & = QD(Q\transposta Q)e_i \nonumber \\
+%          & = QD\Id e_i \label{eq:l1}\\
+%          & = QD e_i \nonumber \\
+%          & = D_{i,i}(Qe_i), \label{eq:l2}
+%\end{align}
+onde as igualdades \eqref{eq:l0}, \eqref{eq:l1} e \eqref{eq:l2} seguem do teorema da
+decomposição espectral.
+
+\section{Símbolos}
+\subsection{Variações de fontes}
+{\sc Small Caps} 
+
+{\sf Sans Serif}
+
+\subsection{Alguns símbolos interessantes}
+Segue uma lista de alguns símbolos que acho ou uteis ou só legais para usar.
+\subsubsection{Uteis}
+$\therefore$
+
+\subsubsection{legais}
+Sillywalk symbol \Denarius
+
+\subsection{Pontos}
+O produto de $ x_1, x_2, \dots, x_n$ é igual a $x_1 x_2 \cdots x_n$.
+
+\end{document}

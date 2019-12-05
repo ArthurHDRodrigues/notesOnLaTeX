@@ -1,0 +1,10 @@
+\babel@toc {brazil}{}
+\contentsline {section}{\numberline {1}Imagens}{2}% 
+\contentsline {section}{\numberline {2}math mode}{2}% 
+\contentsline {subsection}{\numberline {2.1}Denifi\IeC {\c c}\IeC {\~o}es, provas e teoremas}{2}% 
+\contentsline {section}{\numberline {3}S\IeC {\'\i }mbolos}{3}% 
+\contentsline {subsection}{\numberline {3.1}Varia\IeC {\c c}\IeC {\~o}es de fontes}{3}% 
+\contentsline {subsection}{\numberline {3.2}Alguns s\IeC {\'\i }mbolos interessantes}{3}% 
+\contentsline {subsubsection}{\numberline {3.2.1}Uteis}{3}% 
+\contentsline {subsubsection}{\numberline {3.2.2}legais}{3}% 
+\contentsline {subsection}{\numberline {3.3}Pontos}{3}% 
