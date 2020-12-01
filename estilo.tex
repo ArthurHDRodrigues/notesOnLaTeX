@@ -39,6 +39,12 @@
 \newenvironment{proof}{\noindent{\bf Proof:}}{$\hfill \Box$ \vspace{10pt}} 
 \newtheorem{proposicao}[theorem]{{\bf Proposição}}
 
+%Ambiente de exemplo sem ter texto em italico\\
+%\newcounter{examble}%[section] %caso queira contator separado para exemplos
+\newenvironment{exemplo}[1][]{
+\refstepcounter{theorem}\par\medskip
+\noindent \textbf{Exemplo~\thetheorem. #1} \rmfamily
+}{\medskip}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 %       Macros        %
